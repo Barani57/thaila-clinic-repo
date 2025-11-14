@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Thaila Clinic & Pharmacy - Trusted Care, Close to Home</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Iconify for Professional Icons -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background Particles -->
+    <div id="particles-container"></div>
+    
+    <!-- Floating Medical Elements -->
+    <div class="floating-elements">
+        <div class="float-element" style="top: 10%; left: 5%;">
+            <span class="iconify" data-icon="medical-icon:i-care" data-width="40"></span>
+        </div>
+        <div class="float-element" style="top: 30%; right: 10%;">
+            <span class="iconify" data-icon="healthicons:health-worker-form" data-width="35"></span>
+        </div>
+        <div class="float-element" style="top: 60%; left: 8%;">
+            <span class="iconify" data-icon="medical-icon:i-family-practice" data-width="38"></span>
+        </div>
+        <div class="float-element" style="bottom: 15%; right: 5%;">
+            <span class="iconify" data-icon="healthicons:ambulance" data-width="36"></span>
+        </div>
+    </div>
+
+    <!-- Premium Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <img src="assets/thaila logo.png" alt="Sri Thaila Clinic Logo" width="56">
+                </div>
+                <div class="logo-text">
+                    <h1>SRI THAILA CLINIC</h1>
+                    <p>Trusted Care, Close to Home</p>
+                </div>
+            </div>
+            
+            <nav class="nav" id="nav">
+
+                <a href="#specialities" class="nav-link">SPECIALITIES</a>
+                <a href="#doctors" class="nav-link">DOCTORS</a>
+                <a href="#facilities" class="nav-link">FACILITIES</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="#appointment" class="btn-primary">
+                    <span>BOOK APPOINTMENT</span>
+                    <span class="iconify" data-icon="solar:calendar-mark-bold"></span>
+                </a>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section with 3D Elements -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content" data-scroll-animation>
+                <div class="badge-24hr">
+                    <span class="iconify" data-icon="solar:clock-circle-bold"></span>
+                    <span>OPEN 24 HOURS</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Your Neighbourhood<br>
+                    <span class="gradient-text">Multispeciality Clinic</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Expert doctors, exclusive women's health services, 24-hour OPD, pharmacy, 
+                    lab and scan facilities — all under one roof
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>Specialities</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Expert Doctors</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <h3>10,000+</h3>
+                        <p>Happy Patients</p>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn-hero-primary">
+                        <span>SCHEDULE CONSULTATION</span>
+                        <span class="iconify" data-icon="solar:arrow-right-bold"></span>
+                    </a>
+                    <a href="#specialities" class="btn-hero-secondary">
+                        <span>EXPLORE SERVICES</span>
+                        <span class="iconify" data-icon="solar:round-arrow-right-bold"></span>
+                    </a>
+                </div>
+                
+                <div class="hero-badges">
+                    <div class="badge-item">
+                        <span class="iconify" data-icon="solar:verified-check-bold"></span>
+                        <span>NABH Accredited</span>
+                    </div>
+                    <div class="badge-item">
+                        <span class="iconify" data-icon="solar:shield-check-bold"></span>
+                        <span>ISO Certified</span>
+                    </div>
+                    <div class="badge-item">
+                        <span class="iconify" data-icon="solar:medal-star-bold"></span>
+                        <span>Award Winning Care</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual" data-scroll-animation>
+                <div class="lottie-container">
+                    <lottie-player 
+                        src="assets/doctors.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100%; height: 100%;"
+                        loop
+                        autoplay>
+                    </lottie-player>
+                </div>
+                
+                <div class="floating-cards">
+                    <div class="info-card card-1">
+                        <span class="iconify" data-icon="medical-icon:i-health-services"></span>
+                        <div>
+                            <h4>Complete Care</h4>
+                            <p>All services available</p>
+                        </div>
+                    </div>
+                    <div class="info-card card-2">
+                        <span class="iconify" data-icon="healthicons:doctor-male"></span>
+                        <div>
+                            <h4>Expert Team</h4>
+                            <p>Experienced specialists</p>
+                        </div>
+                    </div>
+                    <div class="info-card card-3">
+                        <span class="iconify" data-icon="medical-icon:i-emergency"></span>
+                        <div>
+                            <h4>24/7 Available</h4>
+                            <p>Round-the-clock care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="iconify" data-icon="solar:double-alt-arrow-down-bold"></span>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="vision-mission" data-scroll-animation>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">OUR COMMITMENT</span>
+                <h2 class="section-title">Guided by Purpose, Driven by Care</h2>
+            </div>
+            
+            <div class="vm-grid">
+                <div class="vm-card vision-card">
+                    <div class="vm-icon">
+                        <span class="iconify" data-icon="solar:eye-bold"></span>
+                    </div>
+                    <h3>OUR VISION</h3>
+                    <p class="vm-main">To make quality healthcare accessible, affordable, and compassionate — for every person, every family, every single day.</p>
+                    <div class="vm-tagline">
+                        <span class="iconify" data-icon="solar:star-bold"></span>
+                        <p>Accessible. Affordable. Compassionate Care — Every Day.</p>
+                    </div>
+                </div>
+                
+                <div class="vm-card mission-card">
+                    <div class="vm-icon">
+                        <span class="iconify" data-icon="solar:target-bold"></span>
+                    </div>
+                    <h3>OUR MISSION</h3>
+                    <ul class="mission-list">
+                        <li>
+                            <span class="iconify" data-icon="solar:check-circle-bold"></span>
+                            <p>Bring trusted specialists from every field under one roof</p>
+                        </li>
+                        <li>
+                            <span class="iconify" data-icon="solar:check-circle-bold"></span>
+                            <p>Offer advanced services at fair costs, with free care for those in need</p>
+                        </li>
+                        <li>
+                            <span class="iconify" data-icon="solar:check-circle-bold"></span>
+                            <p>Ensure every patient is cared for with empathy and respect</p>
+                        </li>
+                        <li>
+                            <span class="iconify" data-icon="solar:check-circle-bold"></span>
+                            <p>Bridge the gap between expert care and community reach</p>
+                        </li>
+                        <li>
+                            <span class="iconify" data-icon="solar:check-circle-bold"></span>
+                            <p>Empower patients with knowledge for confident health decisions</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialities Section -->
+    <section class="specialities" id="specialities">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">COMPREHENSIVE CARE</span>
+                <h2 class="section-title">Our Medical Specialities</h2>
+                <p class="section-description">Expert care across all medical disciplines, delivered with compassion and cutting-edge technology</p>
+            </div>
+            
+            <div class="specialities-grid">
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="i-jam:medical"></span>
+                    </div>
+                    <h3>Maternity & Obstetric Care</h3>
+                    <p>Complete pregnancy care from conception to postpartum</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="i-healthicons:pregnant-32w"></span>
+                    </div>
+                    <h3>Fertility & Reproductive Medicine</h3>
+                    <p>Advanced fertility treatments and reproductive health services</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="healthicons:woman-doctor"></span>
+                    </div>
+                    <h3>Gynaecology & Women's Health</h3>
+                    <p>Comprehensive women's health and wellness services</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="medical-icon:i-surgery"></span>
+                    </div>
+                    <h3>Cosmetic Gynaecology</h3>
+                    <p>Advanced aesthetic and reconstructive procedures</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="healthicons:surgical-sterilization"></span>
+                    </div>
+                    <h3>General Surgery</h3>
+                    <p>Expert surgical care with minimally invasive techniques</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="healthicons:medicine"></span>
+                    </div>
+                    <h3>General Medicine</h3>
+                    <p>Comprehensive primary and preventive healthcare</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="medical-icon:i-diabetes"></span>
+                    </div>
+                    <h3>Diabetology Clinic</h3>
+                    <p>Specialized diabetes management and prevention</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="healthicons:elderly"></span>
+                    </div>
+                    <h3>Geriatric (Senior Care)</h3>
+                    <p>Dedicated care for our senior community members</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="medical-icon:i-gastroenterology"></span>
+                    </div>
+                    <h3>Surgical Gastroenterology</h3>
+                    <p>Advanced digestive system surgical care</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="healthicons:skin"></span>
+                    </div>
+                    <h3>Dermatology & Skin Care</h3>
+                    <p>Complete skin, hair, and cosmetic treatments</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="healthicons:child-care"></span>
+                    </div>
+                    <h3>Pediatrics & Child Health</h3>
+                    <p>Expert care for infants, children, and adolescents</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="healthicons:nutrition"></span>
+                    </div>
+                    <h3>Nutrition & Diet Consultation</h3>
+                    <p>Personalized nutrition plans and dietary guidance</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="healthicons:bones"></span>
+                    </div>
+                    <h3>Orthopedics & Bone Health</h3>
+                    <p>Comprehensive musculoskeletal care and treatment</p>
+                    <div class="card-hover-line"></div>
+                </div>
+                
+                <div class="specialty-card" data-scroll-animation>
+                    <div class="specialty-icon">
+                        <span class="iconify" data-icon="healthicons:imaging"></span>
+                    </div>
+                    <h3>Radiology & Imaging Services</h3>
+                    <p>State-of-the-art diagnostic imaging facilities</p>
+                    <div class="card-hover-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="doctors" id="doctors">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">MEET OUR EXPERTS</span>
+                <h2 class="section-title">Our Medical Team</h2>
+                <p class="section-description">Experienced specialists dedicated to your health and wellbeing</p>
+            </div>
+            
+            <div class="doctors-grid">
+                <div class="doctor-card" data-scroll-animation>
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&fit=crop" alt="Dr. Priya Sharma">
+                        <div class="doctor-overlay">
+                            <div class="doctor-specialties">
+                                <span>Gynaecology</span>
+                                <span>Obstetrics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Priya Sharma</h3>
+                        <p class="doctor-position">Senior Consultant</p>
+                        <p class="doctor-expertise">MBBS, MD (OB-GYN), FRCOG</p>
+                        <div class="doctor-stats">
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:calendar-bold"></span>
+                                <span>15+ Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:users-group-rounded-bold"></span>
+                                <span>5000+ Patients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card" data-scroll-animation>
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=500&fit=crop" alt="Dr. Rajesh Kumar">
+                        <div class="doctor-overlay">
+                            <div class="doctor-specialties">
+                                <span>General Surgery</span>
+                                <span>Laparoscopy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Rajesh Kumar</h3>
+                        <p class="doctor-position">Lead Surgeon</p>
+                        <p class="doctor-expertise">MBBS, MS (General Surgery)</p>
+                        <div class="doctor-stats">
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:calendar-bold"></span>
+                                <span>12+ Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:users-group-rounded-bold"></span>
+                                <span>3000+ Surgeries</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card" data-scroll-animation>
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=500&fit=crop" alt="Dr. Meera Reddy">
+                        <div class="doctor-overlay">
+                            <div class="doctor-specialties">
+                                <span>Pediatrics</span>
+                                <span>Neonatology</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Meera Reddy</h3>
+                        <p class="doctor-position">Pediatric Specialist</p>
+                        <p class="doctor-expertise">MBBS, MD (Pediatrics), FIAP</p>
+                        <div class="doctor-stats">
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:calendar-bold"></span>
+                                <span>10+ Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:users-group-rounded-bold"></span>
+                                <span>8000+ Children</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card" data-scroll-animation>
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=500&fit=crop" alt="Dr. Arun Krishnan">
+                        <div class="doctor-overlay">
+                            <div class="doctor-specialties">
+                                <span>Diabetology</span>
+                                <span>Endocrinology</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Arun Krishnan</h3>
+                        <p class="doctor-position">Diabetologist</p>
+                        <p class="doctor-expertise">MBBS, MD (Medicine), DM (Endo)</p>
+                        <div class="doctor-stats">
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:calendar-bold"></span>
+                                <span>14+ Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:users-group-rounded-bold"></span>
+                                <span>6000+ Patients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card" data-scroll-animation>
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&h=500&fit=crop" alt="Dr. Lakshmi Devi">
+                        <div class="doctor-overlay">
+                            <div class="doctor-specialties">
+                                <span>Dermatology</span>
+                                <span>Cosmetology</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Lakshmi Devi</h3>
+                        <p class="doctor-position">Dermatologist</p>
+                        <p class="doctor-expertise">MBBS, MD (Dermatology), DDV</p>
+                        <div class="doctor-stats">
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:calendar-bold"></span>
+                                <span>8+ Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:users-group-rounded-bold"></span>
+                                <span>4000+ Treatments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card" data-scroll-animation>
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&h=500&fit=crop" alt="Dr. Venkat Ramanan">
+                        <div class="doctor-overlay">
+                            <div class="doctor-specialties">
+                                <span>Orthopedics</span>
+                                <span>Sports Medicine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Venkat Ramanan</h3>
+                        <p class="doctor-position">Orthopedic Surgeon</p>
+                        <p class="doctor-expertise">MBBS, MS (Ortho), FRCS</p>
+                        <div class="doctor-stats">
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:calendar-bold"></span>
+                                <span>11+ Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="iconify" data-icon="solar:users-group-rounded-bold"></span>
+                                <span>2500+ Surgeries</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="facilities" id="facilities">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">WORLD-CLASS INFRASTRUCTURE</span>
+                <h2 class="section-title">Our Facilities</h2>
+                <p class="section-description">State-of-the-art medical infrastructure designed for your comfort and care</p>
+            </div>
+            
+            <div class="facilities-grid">
+                <div class="facility-card" data-scroll-animation>
+                    <div class="facility-icon">
+                        <span class="iconify" data-icon="healthicons:ambulatory-clinic"></span>
+                    </div>
+                    <h3>24-Hour OPD</h3>
+                    <p>Round-the-clock outpatient services for all your medical needs</p>
+                </div>
+                
+                <div class="facility-card" data-scroll-animation>
+                    <div class="facility-icon">
+                        <span class="iconify" data-icon="healthicons:pharmacy"></span>
+                    </div>
+                    <h3>In-House Pharmacy</h3>
+                    <p>Complete pharmacy with all medicines available 24/7</p>
+                </div>
+                
+                <div class="facility-card" data-scroll-animation>
+                    <div class="facility-icon">
+                        <span class="iconify" data-icon="healthicons:lab-test-tube-flask"></span>
+                    </div>
+                    <h3>Diagnostic Lab</h3>
+                    <p>Advanced laboratory with rapid and accurate test results</p>
+                </div>
+                
+                <div class="facility-card" data-scroll-animation>
+                    <div class="facility-icon">
+                        <span class="iconify" data-icon="healthicons:ultrasound"></span>
+                    </div>
+                    <h3>Imaging & Scan</h3>
+                    <p>Latest scanning technology including ultrasound and X-ray</p>
+                </div>
+                
+                <div class="facility-card" data-scroll-animation>
+                    <div class="facility-icon">
+                        <span class="iconify" data-icon="healthicons:i-surgery-center"></span>
+                    </div>
+                    <h3>Operation Theater</h3>
+                    <p>Fully equipped OT with modern surgical instruments</p>
+                </div>
+                
+                <div class="facility-card" data-scroll-animation>
+                    <div class="facility-icon">
+                        <span class="iconify" data-icon="healthicons:i-exam-multiple-choice"></span>
+                    </div>
+                    <h3>Consultation Rooms</h3>
+                    <p>Private, comfortable consultation spaces with specialists</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Hours -->
+    <section class="consultation-hours" data-scroll-animation>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">DOCTOR AVAILABILITY</span>
+                <h2 class="section-title">Consultation Hours</h2>
+            </div>
+            
+            <div class="hours-grid">
+                <div class="hour-card">
+                    <div class="hour-icon">
+                        <span class="iconify" data-icon="healthicons:woman-doctor"></span>
+                    </div>
+                    <h3>Gynaecologist</h3>
+                    <p class="time">9:00 AM – 5:00 PM</p>
+                    <p class="days">Monday to Saturday</p>
+                </div>
+                
+                <div class="hour-card">
+                    <div class="hour-icon">
+                        <span class="iconify" data-icon="healthicons:skin"></span>
+                    </div>
+                    <h3>Dermatology</h3>
+                    <p class="time">9:00 AM – 11:00 AM</p>
+                    <p class="days">Sunday</p>
+                </div>
+                
+                <div class="hour-card">
+                    <div class="hour-icon">
+                        <span class="iconify" data-icon="healthicons:medicine"></span>
+                    </div>
+                    <h3>General Medicine & Diabetology</h3>
+                    <p class="time">4:00 PM – 8:00 PM</p>
+                    <p class="days">Thursday</p>
+                </div>
+                
+                <div class="hour-card">
+                    <div class="hour-icon">
+                        <span class="iconify" data-icon="healthicons:surgical-sterilization"></span>
+                    </div>
+                    <h3>General Surgery</h3>
+                    <p class="time">4:00 PM – 6:00 PM</p>
+                    <p class="days">Monday, Wednesday, Friday</p>
+                </div>
+                
+                <div class="hour-card">
+                    <div class="hour-icon">
+                        <span class="iconify" data-icon="medical-icon:i-gastroenterology"></span>
+                    </div>
+                    <h3>Surgical Gastroenterology</h3>
+                    <p class="time">4:00 PM – 6:00 PM</p>
+                    <p class="days">Tuesday, Thursday, Saturday</p>
+                </div>
+                
+                <div class="hour-card">
+                    <div class="hour-icon">
+                        <span class="iconify" data-icon="healthicons:bones"></span>
+                    </div>
+                    <h3>Orthopedics</h3>
+                    <p class="time">6:00 PM – 7:00 PM</p>
+                    <p class="days">Tuesday, Saturday</p>
+                </div>
+                
+                <div class="hour-card">
+                    <div class="hour-icon">
+                        <span class="iconify" data-icon="healthicons:child-care"></span>
+                    </div>
+                    <h3>Pediatrics</h3>
+                    <p class="time">7:00 PM – 9:00 PM</p>
+                    <p class="days">Wednesday, Friday</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment" id="appointment">
+        <div class="container">
+            <div class="appointment-wrapper">
+                <div class="appointment-content" data-scroll-animation>
+                    <span class="section-label">BOOK YOUR VISIT</span>
+                    <h2 class="section-title">Schedule an Appointment</h2>
+                    <p>Take the first step towards better health. Our team is ready to provide you with expert care.</p>
+                    
+                    <div class="appointment-features">
+                        <div class="feature-item">
+                            <span class="iconify" data-icon="solar:check-circle-bold"></span>
+                            <span>Quick 15-minute response</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="iconify" data-icon="solar:check-circle-bold"></span>
+                            <span>Flexible scheduling options</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="iconify" data-icon="solar:check-circle-bold"></span>
+                            <span>Confirmation via SMS & WhatsApp</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <a href="tel:9894060645" class="contact-method">
+                            <span class="iconify" data-icon="solar:phone-bold"></span>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>98940 60645</p>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/917176660645" class="contact-method" target="_blank">
+                            <span class="iconify" data-icon="ic:baseline-whatsapp"></span>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>91766 60645</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="appointment-form-container" data-scroll-animation>
+                    <form class="appointment-form" id="appointmentForm">
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <div class="input-wrapper">
+                                <span class="iconify" data-icon="solar:user-bold"></span>
+                                <input type="text" name="name" placeholder="Enter your full name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Phone Number *</label>
+                                <div class="input-wrapper">
+                                    <span class="iconify" data-icon="solar:phone-bold"></span>
+                                    <input type="tel" name="phone" placeholder="10-digit mobile number" required pattern="[0-9]{10}">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Email</label>
+                                <div class="input-wrapper">
+                                    <span class="iconify" data-icon="solar:letter-bold"></span>
+                                    <input type="email" name="email" placeholder="your.email@example.com">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Preferred Date *</label>
+                                <div class="input-wrapper">
+                                    <span class="iconify" data-icon="solar:calendar-bold"></span>
+                                    <input type="date" name="date" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Preferred Time *</label>
+                                <div class="input-wrapper">
+                                    <span class="iconify" data-icon="solar:clock-circle-bold"></span>
+                                    <select name="time" required>
+                                        <option value="">Select time</option>
+                                        <option value="morning">Morning (9 AM - 12 PM)</option>
+                                        <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                                        <option value="evening">Evening (4 PM - 8 PM)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Department *</label>
+                            <div class="input-wrapper">
+                                <span class="iconify" data-icon="solar:health-bold"></span>
+                                <select name="department" required>
+                                    <option value="">Choose a speciality</option>
+                                    <option value="gynaecology">Gynaecology & Women's Health</option>
+                                    <option value="maternity">Maternity & Obstetric Care</option>
+                                    <option value="fertility">Fertility & Reproductive Medicine</option>
+                                    <option value="surgery">General Surgery</option>
+                                    <option value="medicine">General Medicine</option>
+                                    <option value="diabetology">Diabetology</option>
+                                    <option value="pediatrics">Pediatrics</option>
+                                    <option value="dermatology">Dermatology</option>
+                                    <option value="orthopedics">Orthopedics</option>
+                                    <option value="gastroenterology">Surgical Gastroenterology</option>
+                                    <option value="nutrition">Nutrition & Diet</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Additional Notes</label>
+                            <div class="input-wrapper">
+                                <span class="iconify" data-icon="solar:document-text-bold"></span>
+                                <textarea name="message" rows="3" placeholder="Tell us about your health concern or any specific requirements"></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            <span>CONFIRM APPOINTMENT</span>
+                            <span class="iconify" data-icon="solar:arrow-right-bold"></span>
+                        </button>
+                        
+                        <p class="form-note">
+                            <span class="iconify" data-icon="solar:shield-check-bold"></span>
+                            Your information is secure and confidential
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">GET IN TOUCH</span>
+                <h2 class="section-title">Visit Us Today</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-scroll-animation>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <span class="iconify" data-icon="solar:map-point-bold"></span>
+                        </div>
+                        <div class="info-content">
+                            <h3>OUR LOCATION</h3>
+                            <p>Plot No. 1-A1, Dr. Rajendra Prasad Road,<br>
+                            Gayathri Nagar, Hasthinapuram,<br>
+                            Chrompet – 600044, Chennai</p>
+                            <a href="https://maps.app.goo.gl/yctj22a67qqpYWMU7" target="_blank" class="link-button">
+                                <span>Get Directions</span>
+                                <span class="iconify" data-icon="solar:arrow-right-bold"></span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <span class="iconify" data-icon="solar:phone-bold"></span>
+                        </div>
+                        <div class="info-content">
+                            <h3>PHONE NUMBERS</h3>
+                            <p><strong>Primary:</strong> <a href="tel:9894060645">98940 60645</a></p>
+                            <p><strong>Landline:</strong> <a href="tel:04422236645">044 – 2223 6645</a></p>
+                            <p><strong>WhatsApp:</strong> <a href="https://wa.me/917176660645">91766 60645</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <span class="iconify" data-icon="solar:letter-bold"></span>
+                        </div>
+                        <div class="info-content">
+                            <h3>EMAIL ADDRESS</h3>
+                            <p><a href="mailto:srithalahealthcare@gmail.com">srithalahealthcare@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <span class="iconify" data-icon="solar:clock-circle-bold"></span>
+                        </div>
+                        <div class="info-content">
+                            <h3>WORKING HOURS</h3>
+                            <p class="hours-24">OPEN 24 HOURS</p>
+                            <p class="hours-detail">Round-the-clock emergency and general services</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container" data-scroll-animation>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1234567890123!2d80.1234567890123!3d12.9876543210987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU5JzE1LjYiTiA4MMKwMDcnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; border-radius: 20px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <a href="https://maps.app.goo.gl/yctj22a67qqpYWMU7" target="_blank" class="map-overlay">
+                        <span class="iconify" data-icon="solar:map-point-bold"></span>
+                        <span>Open in Google Maps</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <div class="logo-circle">
+                                <img src="assets/thaila logo name.png" alt="Sri Thaila Clinic Logo" width="56">
+                            </div>
+                            <div>
+                                <h3>SRI THAILA CLINIC</h3>
+                                <p>Trusted Care, Close to Home</p>
+                            </div>
+                        </div>
+                        <p class="footer-text">Your neighbourhood multispeciality clinic providing comprehensive healthcare services with compassion and expertise.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook">
+                                <span class="iconify" data-icon="ic:baseline-facebook"></span>
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <span class="iconify" data-icon="mdi:instagram"></span>
+                            </a>
+                            <a href="https://wa.me/917176660645" target="_blank" aria-label="WhatsApp">
+                                <span class="iconify" data-icon="ic:baseline-whatsapp"></span>
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <span class="iconify" data-icon="mdi:twitter"></span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>QUICK LINKS</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#specialities">Our Specialities</a></li>
+                            <li><a href="#doctors">Our Doctors</a></li>
+                            <li><a href="#facilities">Facilities</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>SPECIALITIES</h4>
+                        <ul>
+                            <li><a href="#specialities">Gynaecology</a></li>
+                            <li><a href="#specialities">Maternity Care</a></li>
+                            <li><a href="#specialities">Pediatrics</a></li>
+                            <li><a href="#specialities">General Surgery</a></li>
+                            <li><a href="#specialities">Diabetology</a></li>
+                            <li><a href="#specialities">Dermatology</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>CONTACT INFO</h4>
+                        <ul class="contact-list">
+                            <li>
+                                <span class="iconify" data-icon="solar:map-point-bold"></span>
+                                <span>Plot No. 1-A1, Dr. Rajendra Prasad Road, Gayathri Nagar, Hasthinapuram, Chrompet – 600044</span>
+                            </li>
+                            <li>
+                                <span class="iconify" data-icon="solar:phone-bold"></span>
+                                <span><a href="tel:9894060645">98940 60645</a></span>
+                            </li>
+                            <li>
+                                <span class="iconify" data-icon="solar:letter-bold"></span>
+                                <span><a href="mailto:srithalahealthcare@gmail.com">srithalahealthcare@gmail.com</a></span>
+                            </li>
+                            <li>
+                                <span class="iconify" data-icon="solar:clock-circle-bold"></span>
+                                <span>Open 24 Hours</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Sri Thaila Clinic & Pharmacy. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#">Terms of Service</a>
+                    <span>•</span>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917176660645" class="whatsapp-float" target="_blank" aria-label="Contact via WhatsApp">
+        <span class="iconify" data-icon="ic:baseline-whatsapp"></span>
+        <span class="pulse-ring"></span>
+    </a>
+
+    <!-- Call Floating Button -->
+    <a href="tel:9894060645" class="call-float" aria-label="Call us">
+        <span class="iconify" data-icon="solar:phone-bold"></span>
+        <span class="pulse-ring"></span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
