@@ -104,7 +104,7 @@ function createParticles() {
             position: absolute;
             width: ${Math.random() * 4 + 2}px;
             height: ${Math.random() * 4 + 2}px;
-            background: radial-gradient(circle, rgba(255, 181, 167, 0.6), rgba(255, 196, 184, 0.4));
+            background: radial-gradient(circle, rgba(252, 165, 243, 0.6), rgba(61, 160, 227, 0.4));
             border-radius: 50%;
             top: ${Math.random() * 100}%;
             left: ${Math.random() * 100}%;
@@ -184,18 +184,13 @@ Booking made via website on ${new Date().toLocaleString('en-IN')}
     // Show loading state
     const submitButton = appointmentForm.querySelector('.btn-submit');
     const originalButtonText = submitButton.innerHTML;
-    submitButton.innerHTML = '<span class="iconify" data-icon="svg-spinners:ring-resize"></span> <span>PROCESSING...</span>';
+    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>PROCESSING...</span>';
     submitButton.disabled = true;
     
     try {
         // Send WhatsApp message (opens WhatsApp with pre-filled message)
-        const whatsappNumber = '918248233700'; // Test number
+        const whatsappNumber = '917176660645';
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-        
-        // Send email using a simple mailto (for testing)
-        const emailSubject = encodeURIComponent('New Appointment Request - Sri Thaila Clinic');
-        const emailBody = encodeURIComponent(message);
-        const mailtoUrl = `mailto:baranimc888@gmail.com?subject=${emailSubject}&body=${emailBody}`;
         
         // Show success message
         showNotification('success', 'Appointment request received! Redirecting to WhatsApp...');
@@ -207,14 +202,6 @@ Booking made via website on ${new Date().toLocaleString('en-IN')}
         setTimeout(() => {
             // Open WhatsApp in new tab
             window.open(whatsappUrl, '_blank');
-            
-            // Optional: Also open mailto (user can choose to send via email)
-            setTimeout(() => {
-                const sendEmail = confirm('Would you also like to send confirmation via email?');
-                if (sendEmail) {
-                    window.location.href = mailtoUrl;
-                }
-            }, 1000);
         }, 1500);
         
     } catch (error) {
@@ -241,13 +228,13 @@ function showNotification(type, message) {
     notification.className = `custom-notification ${type}`;
     notification.innerHTML = `
         <div class="notification-icon">
-            ${type === 'success' ? '<span class="iconify" data-icon="solar:check-circle-bold"></span>' : '<span class="iconify" data-icon="solar:close-circle-bold"></span>'}
+            ${type === 'success' ? '<i class="fas fa-check-circle"></i>' : '<i class="fas fa-times-circle"></i>'}
         </div>
         <div class="notification-content">
             <p>${message}</p>
         </div>
         <button class="notification-close" onclick="this.parentElement.remove()">
-            <span class="iconify" data-icon="solar:close-circle-bold"></span>
+            <i class="fas fa-times"></i>
         </button>
     `;
     
@@ -280,7 +267,7 @@ notificationStyle.textContent = `
         padding: 20px 24px;
         z-index: 10000;
         transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        border-left: 4px solid #FF6F61;
+        border-left: 4px solid #FCA5F3;
     }
     
     .custom-notification.show {
@@ -297,7 +284,7 @@ notificationStyle.textContent = `
     
     .notification-icon {
         font-size: 32px;
-        color: #FF6F61;
+        color: #FCA5F3;
     }
     
     .custom-notification.success .notification-icon {
@@ -379,16 +366,6 @@ window.addEventListener('scroll', () => {
         const speed = 0.3 + (index * 0.1);
         shape.style.transform = `translateY(${scrolled * speed}px)`;
     });
-    
-    // Parallax for floating cards
-    const floatingCards = document.querySelectorAll('.info-card');
-    floatingCards.forEach((card, index) => {
-        const speed = 0.1 + (index * 0.05);
-        const currentTransform = window.getComputedStyle(card).transform;
-        if (currentTransform !== 'none') {
-            card.style.transform = `${currentTransform} translateY(${-scrolled * speed}px)`;
-        }
-    });
 });
 
 // ==================== COUNTER ANIMATION ====================
@@ -427,42 +404,6 @@ if (heroStats) {
     statsObserver.observe(heroStats);
 }
 
-// ==================== CURSOR TRAIL EFFECT ====================
-let mouseX = 0;
-let mouseY = 0;
-let cursorX = 0;
-let cursorY = 0;
-
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
-
-function animateCursor() {
-    const speed = 0.15;
-    cursorX += (mouseX - cursorX) * speed;
-    cursorY += (mouseY - cursorY) * speed;
-    
-    requestAnimationFrame(animateCursor);
-}
-
-animateCursor();
-
-// ==================== IMAGE LAZY LOADING ====================
-const images = document.querySelectorAll('img[data-src]');
-const imageObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const img = entry.target;
-            img.src = img.dataset.src;
-            img.removeAttribute('data-src');
-            imageObserver.unobserve(img);
-        }
-    });
-});
-
-images.forEach(img => imageObserver.observe(img));
-
 // ==================== FORM INPUT ANIMATIONS ====================
 const formInputs = document.querySelectorAll('.input-wrapper input, .input-wrapper select, .input-wrapper textarea');
 
@@ -477,38 +418,9 @@ formInputs.forEach(input => {
     });
 });
 
-// ==================== TYPING EFFECT FOR HERO TITLE ====================
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
-    
-    function type() {
-        if (i < text.length) {
-            if (text.charAt(i) === '<') {
-                const closingTag = text.indexOf('>', i);
-                element.innerHTML += text.substring(i, closingTag + 1);
-                i = closingTag + 1;
-            } else {
-                element.innerHTML += text.charAt(i);
-                i++;
-            }
-            setTimeout(type, speed);
-        }
-    }
-    
-    type();
-}
-
-// Optional: Enable typing effect on page load
-// const heroTitle = document.querySelector('.hero-title');
-// if (heroTitle) {
-//     const originalText = heroTitle.innerHTML;
-//     typeWriter(heroTitle, originalText, 50);
-// }
-
 // ==================== SCROLL TO TOP BUTTON ====================
 const scrollToTopBtn = document.createElement('button');
-scrollToTopBtn.innerHTML = '<span class="iconify" data-icon="solar:arrow-up-bold"></span>';
+scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
 scrollToTopBtn.className = 'scroll-to-top';
 scrollToTopBtn.style.cssText = `
     position: fixed;
@@ -516,13 +428,13 @@ scrollToTopBtn.style.cssText = `
     right: 32px;
     width: 56px;
     height: 56px;
-    background: linear-gradient(135deg, #FFB5A7 0%, #FF8A80 100%);
+    background: linear-gradient(135deg, #FCA5F3 0%, #3DA0E3 100%);
     border: none;
     border-radius: 50%;
     color: white;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 8px 32px rgba(255, 111, 97, 0.3);
+    box-shadow: 0 8px 32px rgba(252, 165, 243, 0.3);
     z-index: 998;
     opacity: 0;
     visibility: hidden;
@@ -580,13 +492,9 @@ window.addEventListener('load', () => {
 });
 
 // ==================== CONSOLE BRANDING ====================
-console.log('%c🏥 Sri Thaila Clinic & Pharmacy', 'font-size: 24px; font-weight: bold; color: #FF8A80;');
+console.log('%c🏥 Sri Thaila Clinic & Pharmacy', 'font-size: 24px; font-weight: bold; color: #FCA5F3;');
 console.log('%cTrusted Care, Close to Home', 'font-size: 14px; color: #6B6B6B;');
 console.log('%cWebsite developed with ❤️', 'font-size: 12px; color: #9E9E9E;');
-
-// ==================== PREVENT CONTEXT MENU (Optional) ====================
-// Uncomment if you want to disable right-click
-// document.addEventListener('contextmenu', (e) => e.preventDefault());
 
 // ==================== KEYBOARD ACCESSIBILITY ====================
 document.addEventListener('keydown', (e) => {
@@ -701,10 +609,4 @@ document.head.appendChild(rippleStyle);
 // ==================== INITIALIZE ALL FEATURES ====================
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Sri Thaila Clinic website loaded successfully! ✨');
-    
-    // Add any additional initialization code here
-    
-    // Example: Initialize tooltips, modals, etc.
-    // initTooltips();
-    // initModals();
 });
